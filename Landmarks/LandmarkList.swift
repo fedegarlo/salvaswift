@@ -8,7 +8,7 @@ A view showing a list of landmarks.
 import SwiftUI
 
 struct LandmarkList: View {
-    @ObjectBinding var userData = UserData()
+    @EnvironmentObject var userData : UserData
     
     var body: some View {
         NavigationView {

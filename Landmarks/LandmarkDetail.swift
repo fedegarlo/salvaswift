@@ -17,7 +17,6 @@ struct LandmarkDetail: View {
     
     var body: some View {
         
-            NavigationView {
                 VStack(alignment: .center) {
                     landmark.image(forSize: 250)
                     VStack(alignment: .leading) {
@@ -63,7 +62,6 @@ struct LandmarkDetail: View {
                 .navigationBarTitle(Text(landmark.name), displayMode: .large)
                 }
             }
-    }
 }
 
 #if DEBUG
