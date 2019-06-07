@@ -2,21 +2,21 @@
 See LICENSE folder for this sample’s licensing information.
 
 Abstract:
-A view showing a list of landmarks.
+A view showing a list of products.
 */
 
 import SwiftUI
 
-struct LandmarkList: View {
+struct ProductList: View {
     @EnvironmentObject var userData : UserData
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(userData.landmarks) { landmark in
+                ForEach(userData.products) { product in
                     NavigationButton(
-                    destination: LandmarkDetail(landmark: landmark)) {
-                        LandmarkRow(landmark: landmark)
+                    destination: ProductDetail(product: product)) {
+                        ProductRow(product: product)
                     }
                 }
                 .onDelete(perform: delete)
@@ -26,15 +26,15 @@ struct LandmarkList: View {
     }
     
     func delete(at offset: IndexSet) {
-        userData.landmarks.remove(at: offset.first!)
+        userData.products.remove(at: offset.first!)
     }
 }
 
 #if DEBUG
-struct LandmarksList_Previews: PreviewProvider {
+struct ProductList_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(["iPhone 8"].identified(by: \.self)) { deviceName in
-            LandmarkList()
+            ProductList()
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)
         }

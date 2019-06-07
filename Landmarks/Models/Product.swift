@@ -8,7 +8,7 @@ The model for an individual landmark.
 import SwiftUI
 import CoreLocation
 
-struct Landmark: Hashable, Codable, Identifiable {
+struct Product: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
     var description: String

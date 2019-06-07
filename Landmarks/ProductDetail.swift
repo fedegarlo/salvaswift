@@ -2,34 +2,34 @@
 See LICENSE folder for this sample’s licensing information.
 
 Abstract:
-A view showing the details for a landmark.
+A view showing the details for a product.
 */
 
 import SwiftUI
 
-struct LandmarkDetail: View {
+struct ProductDetail: View {
     @EnvironmentObject var userData: UserData
-    var landmark: Landmark
+    var product: Product
     
-    var landmarkIndex: Int {
-        userData.landmarks.firstIndex(where: { $0.id == landmark.id })!
+    var productIndex: Int {
+        userData.products.firstIndex(where: { $0.id == product.id })!
     }
     
     var body: some View {
         
                 VStack(alignment: .center) {
-                    landmark.image(forSize: 250)
+                    product.image(forSize: 250)
                     VStack(alignment: .leading) {
                 
                     HStack() {
-                        Text(verbatim: landmark.description)
+                        Text(verbatim: product.description)
                             .font(.title)
                         
                         Button(action: {
-                            self.userData.landmarks[self.landmarkIndex]
+                            self.userData.products[self.productIndex]
                                 .isFavorite.toggle()
                         }) {
-                            if self.userData.landmarks[self.landmarkIndex]
+                            if self.userData.products[self.productIndex]
                                 .isFavorite {
                                 Image(systemName: "star.fill")
                                     .foregroundColor(Color.blue)
@@ -41,10 +41,10 @@ struct LandmarkDetail: View {
                     }
                     
                     HStack(alignment: .top) {
-                        Text(verbatim: landmark.isPrime ? "Prime. From 10,95€" : "From 10,95€")
+                        Text(verbatim: product.isPrime ? "Prime. From 10,95€" : "From 10,95€")
                             .color(.gray)
                         Spacer()
-                        Text(verbatim: String(landmark.price.amount) + landmark.price.currency)
+                        Text(verbatim: String(product.price.amount) + product.price.currency)
                             .fontWeight(.bold)
                             .color(.gray)
                     }
@@ -52,23 +52,23 @@ struct LandmarkDetail: View {
                     .padding()
                 List {
                     Text("Related products")
-                    ForEach(userData.landmarks) { landmark in
+                    ForEach(userData.products) { product in
                         NavigationButton(
-                        destination: LandmarkDetail(landmark: landmark)) {
-                            LandmarkRow(landmark: landmark)
+                        destination: ProductDetail(product: product)) {
+                            ProductRow(product: product)
                         }
                     }
                 }
-                .navigationBarTitle(Text(landmark.name), displayMode: .large)
+                .navigationBarTitle(Text(product.name), displayMode: .large)
                 }
             }
 }
 
 #if DEBUG
-struct LandmarkDetail_Preview: PreviewProvider {
+struct ProductDetail_Preview: PreviewProvider {
     static var previews: some View {
         let userData = UserData()
-        return LandmarkDetail(landmark: userData.landmarks[1])
+        return ProductDetail(product: userData.products[1])
             .environmentObject(userData)
     }
 }

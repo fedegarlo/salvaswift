@@ -2,22 +2,22 @@
 See LICENSE folder for this sample’s licensing information.
 
 Abstract:
-A single row to be displayed in a list of landmarks.
+A single row to be displayed in a list of products.
 */
 
 import SwiftUI
 
-struct LandmarkRow: View {
-    var landmark: Landmark
+struct ProductRow: View {
+    var product: Product
 
     var body: some View {
         HStack {
-            landmark.image(forSize: 50)
+            product.image(forSize: 50)
             VStack(alignment: .leading) {
-                Text(verbatim: landmark.name)
+                Text(verbatim: product.name)
                     .font(.headline)
                 HStack {
-                    Text(verbatim: landmark.isPrime ? "Prime. From 10,95€" : "From 10,95€")
+                    Text(verbatim: product.isPrime ? "Prime. From 10,95€" : "From 10,95€")
                         .color(.gray)
 
                 }
@@ -25,11 +25,11 @@ struct LandmarkRow: View {
             }
             
             Spacer()
-            if (landmark.isFavorite) {
+            if (product.isFavorite) {
                 Image(systemName: "star.fill")
                     .foregroundColor(Color.blue)
             }
-            Text(verbatim: String(landmark.price.amount) + landmark.price.currency)
+            Text(verbatim: String(product.price.amount) + product.price.currency)
                 .fontWeight(.bold)
                 .color(.blue)
                 
@@ -38,11 +38,11 @@ struct LandmarkRow: View {
 }
 
 #if DEBUG
-struct LandmarkRow_Previews: PreviewProvider {
+struct ProductRow_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            LandmarkRow(landmark: landmarkData[0])
-            LandmarkRow(landmark: landmarkData[1])
+            ProductRow(product: productData[0])
+            ProductRow(product: productData[1])
         }
         .previewLayout(.fixed(width: 300, height: 70))
     }

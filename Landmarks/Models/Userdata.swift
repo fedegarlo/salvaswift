@@ -17,7 +17,7 @@ final class UserData: BindableObject {
         }
     }
 
-    var landmarks = landmarkData {
+    var products = productData {
         didSet {
             didChange.send(self)
         }
