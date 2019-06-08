@@ -22,4 +22,10 @@ final class UserData: BindableObject {
             didChange.send(self)
         }
     }
+    
+    var recommendations = productData {
+        didSet {
+            didChange.send(self)
+        }
+    }
 }

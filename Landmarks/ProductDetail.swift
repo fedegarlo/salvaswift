@@ -52,7 +52,7 @@ struct ProductDetail: View {
                     .padding()
                 List {
                     Text("Related products")
-                    ForEach(userData.products) { product in
+                    ForEach(userData.recommendations) { product in
                         NavigationButton(
                         destination: ProductDetail(product: product)) {
                             ProductRow(product: product)

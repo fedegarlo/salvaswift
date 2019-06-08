@@ -13,16 +13,20 @@ struct ProductList: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(userData.products) { product in
-                    NavigationButton(
-                    destination: ProductDetail(product: product)) {
-                        ProductRow(product: product)
+                if !userData.products.isEmpty {
+                    ForEach(userData.products) { product in
+                        NavigationButton(
+                        destination: ProductDetail(product: product)) {
+                            ProductRow(product: product)
+                        }
                     }
+                    .onDelete(perform: delete)
+                } else {
+                    Text("Loading products")
                 }
-                .onDelete(perform: delete)
             }
             .navigationBarTitle(Text("My list"), displayMode: .large)
-        }
+            }
     }
     
     func delete(at offset: IndexSet) {
@@ -31,6 +35,7 @@ struct ProductList: View {
 }
 
 #if DEBUG
+var testData = UserData()
 struct ProductList_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(["iPhone 8"].identified(by: \.self)) { deviceName in
@@ -38,7 +43,7 @@ struct ProductList_Previews: PreviewProvider {
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)
         }
-        .environmentObject(UserData())
+        .environmentObject(testData)
     }
 }
 #endif
