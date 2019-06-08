@@ -43,7 +43,7 @@ struct ProductList_Previews: PreviewProvider {
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)
         }
-        .environmentObject(testData)
+            .environmentObject(testData)
     }
 }
 #endif

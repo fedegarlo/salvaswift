@@ -17,13 +17,7 @@ final class UserData: BindableObject {
         }
     }
 
-    var products = productData {
-        didSet {
-            didChange.send(self)
-        }
-    }
-    
-    var recommendations = productData {
+    var products : [Product] = [] {
         didSet {
             didChange.send(self)
         }

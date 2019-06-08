@@ -24,9 +24,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         loadProducts { products in
             userData.products = products
         }
-        loadRecommendations { products in
-            userData.recommendations = products
-        }
         window.rootViewController = UIHostingController(rootView: ProductList().environmentObject(userData))
         self.window = window
     
