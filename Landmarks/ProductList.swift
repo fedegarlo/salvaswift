@@ -35,7 +35,7 @@ struct ProductList: View {
 }
 
 #if DEBUG
-var testData = UserData()
+
 struct ProductList_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(["iPhone 8"].identified(by: \.self)) { deviceName in
@@ -43,7 +43,7 @@ struct ProductList_Previews: PreviewProvider {
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)
         }
-            .environmentObject(testData)
+            .environmentObject(UserData())
     }
 }
 #endif
