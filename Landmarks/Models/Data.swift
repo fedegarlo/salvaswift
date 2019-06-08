@@ -10,6 +10,25 @@ import SwiftUI
 import CoreLocation
 
 let productData: [Product] = load("productData.json")
+func loadProducts(callback: @escaping ([Product]) -> Void) {
+    guard let url = URL(string: "https://api.myjson.com/bins/f31e5") else {
+        return
+    }
+    let task = URLSession.shared.dataTask(with: url) { data, response, error in
+        if let data = data {
+            do {
+                let res = try JSONDecoder().decode([Product].self, from: data)
+                DispatchQueue.main.async {
+                    callback(res)
+                }
+            } catch let error {
+                print(error)
+            }
+        }
+    }
+    task.resume()
+}
+
 
 func load<T: Decodable>(_ filename: String, as type: T.Type = T.self) -> T {
     let data: Data

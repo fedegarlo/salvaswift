@@ -19,8 +19,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Use a UIHostingController as window root view controller
         let window = UIWindow(frame: UIScreen.main.bounds)
-        window.rootViewController = UIHostingController(rootView: ProductList().environmentObject(UserData()))
+        
+        let userData = UserData()
+        loadProducts { products in
+            userData.products = products
+        }
+        window.rootViewController = UIHostingController(rootView: ProductList().environmentObject(userData))
         self.window = window
+    
         window.makeKeyAndVisible()
     }
 
