@@ -18,7 +18,7 @@ struct ProductDetail: View {
     var body: some View {
         
                 VStack(alignment: .center) {
-                    product.image(forSize: 250)
+                    product.image(forSize: 200)
                     VStack(alignment: .leading) {
                 
                     HStack() {
@@ -68,7 +68,7 @@ struct ProductDetail: View {
 struct ProductDetail_Preview: PreviewProvider {
     static var previews: some View {
         let userData = UserData()
-        return ProductDetail(product: userData.products[1])
+        return ProductDetail(product: userData.products[3])
             .environmentObject(userData)
     }
 }

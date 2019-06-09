@@ -1,7 +1,7 @@
 [
     {
-        "name": "Loading",
-        "description": "Best for wathing tv shows",
+        "name": "Apple TV 4K",
+        "description": "Best for watching tv shows",
         "category": "Rivers",
         "city": "Twentynine Palms",
         "state": "California",
@@ -14,10 +14,10 @@
             "longitude": -116.166868,
             "latitude": 34.011286
         },
-        "imageName": "appletv",
+        "imageName": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/image/AppleInc/aos/published/images/a/pp/apple/tv/apple-tv-hero-select-201709?wid=1076&amp;amp;hei=1070&amp;amp;fmt=jpeg&amp;amp;qlt=80&amp;amp;op_usm=0.5,0.5&amp;amp;.v=1504814112595",
         "price": {
-            "amount" : 199.95,
-            "currency" : "€"
+            "amount": 199.95,
+            "currency": "€"
         }
     },
     {
@@ -35,10 +35,10 @@
             "longitude": -152.665167,
             "latitude": 59.980167
         },
-        "imageName": "iphonexs",
+        "imageName": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/image/AppleInc/aos/published/images/i/ph/iphone/xs/iphone-xs-select-2019-family?wid=882&amp;hei=1058&amp;fmt=jpeg&amp;qlt=80&amp;op_usm=0.5,0.5&amp;.v=1550795428390",
         "price": {
-            "amount" : 1059.95,
-            "currency" : "€"
+            "amount": 1059.95,
+            "currency": "€"
         }
     },
     {
@@ -56,10 +56,10 @@
             "longitude": -135.334571,
             "latitude": 59.560551
         },
-        "imageName": "iphonexs",
+        "imageName": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/image/AppleInc/aos/published/images/i/ph/iphone/xs/iphone-xs-max-select-2018-group?wid=882&hei=1058&fmt=jpeg&qlt=80&op_usm=0.5,0.5&.v=1550795427329",
         "price": {
-            "amount" : 1159.95,
-            "currency" : "€"
+            "amount": 1159.95,
+            "currency": "€"
         }
     },
     {
@@ -77,14 +77,14 @@
             "longitude": -113.536248,
             "latitude": 48.69423
         },
-        "imageName": "ipadpro",
+        "imageName": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/image/AppleInc/aos/published/images/i/pa/ipad/pro/ipad-pro-12-11-select-201810?wid=870&amp;hei=1100&amp;fmt=jpeg&amp;qlt=80&amp;op_usm=0.5,0.5&amp;.v=1540576039631",
         "price": {
-            "amount" : 699.95,
-            "currency" : "€"
+            "amount": 699.95,
+            "currency": "€"
         }
     },
     {
-        "name": "Mac Pro",
+        "name": "Macbook Pro",
         "description": "Powerful tool for designers",
         "category": "Lakes",
         "city": "Twin Lakes",
@@ -98,10 +98,10 @@
             "longitude": -153.849883,
             "latitude": 60.641684
         },
-        "imageName": "macpro",
+        "imageName": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/image/AppleInc/aos/published/images/m/bp/mbp13touch/space/mbp13touch-space-select-201807?wid=1808&hei=1680&fmt=jpeg&qlt=80&.v=1529520060550",
         "price": {
-            "amount" : 5999.95,
-            "currency" : "€"
+            "amount": 5999.95,
+            "currency": "€"
         }
     },
     {
@@ -119,10 +119,10 @@
             "longitude": -113.934831,
             "latitude": 48.56002
         },
-        "imageName": "watch",
+        "imageName": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/image/AppleInc/aos/published/images/a/lu/alu/silver/alu-silver-sport-white-s4-2up_gps_varend?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1539194919964",
         "price": {
-            "amount" : 479.95,
-            "currency" : "€"
+            "amount": 479.95,
+            "currency": "€"
         }
     }
 ]

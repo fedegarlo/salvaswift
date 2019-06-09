@@ -21,11 +21,6 @@
 		B739489F229F2D9700C47603 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B739489E229F2D9700C47603 /* ProductRow.swift */; };
 		B73948A1229F2E1F00C47603 /* ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73948A0229F2E1F00C47603 /* ProductList.swift */; };
 		B7D2AAC5229F4D7C0061E5F5 /* Userdata.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D2AAC4229F4D7C0061E5F5 /* Userdata.swift */; };
-		FAD08E2722AC94E200597A4F /* watch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAD08E2122AC94E100597A4F /* watch.jpg */; };
-		FAD08E2822AC94E200597A4F /* ipadpro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAD08E2222AC94E100597A4F /* ipadpro.jpg */; };
-		FAD08E2A22AC94E200597A4F /* iphonexs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAD08E2422AC94E200597A4F /* iphonexs.jpg */; };
-		FAD08E2B22AC94E200597A4F /* macpro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAD08E2522AC94E200597A4F /* macpro.jpg */; };
-		FAD08E2C22AC94E200597A4F /* appletv.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAD08E2622AC94E200597A4F /* appletv.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,11 +44,6 @@
 		D5436C00D5426EC000000001 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = ../Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 		D547BFA0D5465A8000000001 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		FAD08E1622AC71DD00597A4F /* Landmarks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Landmarks.entitlements; sourceTree = "<group>"; };
-		FAD08E2122AC94E100597A4F /* watch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = watch.jpg; sourceTree = "<group>"; };
-		FAD08E2222AC94E100597A4F /* ipadpro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ipadpro.jpg; sourceTree = "<group>"; };
-		FAD08E2422AC94E200597A4F /* iphonexs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iphonexs.jpg; sourceTree = "<group>"; };
-		FAD08E2522AC94E200597A4F /* macpro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = macpro.jpg; sourceTree = "<group>"; };
-		FAD08E2622AC94E200597A4F /* appletv.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = appletv.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,11 +126,6 @@
 		B7394883229F291A00C47603 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				FAD08E2622AC94E200597A4F /* appletv.jpg */,
-				FAD08E2222AC94E100597A4F /* ipadpro.jpg */,
-				FAD08E2422AC94E200597A4F /* iphonexs.jpg */,
-				FAD08E2522AC94E200597A4F /* macpro.jpg */,
-				FAD08E2122AC94E100597A4F /* watch.jpg */,
 				B739488E229F292E00C47603 /* productData.json */,
 			);
 			path = Resources;
@@ -222,14 +207,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7394872229F194200C47603 /* LaunchScreen.storyboard in Resources */,
-				FAD08E2A22AC94E200597A4F /* iphonexs.jpg in Resources */,
-				FAD08E2822AC94E200597A4F /* ipadpro.jpg in Resources */,
 				B739486F229F194200C47603 /* Preview Assets.xcassets in Resources */,
 				B739486C229F194200C47603 /* Assets.xcassets in Resources */,
-				FAD08E2B22AC94E200597A4F /* macpro.jpg in Resources */,
 				B739489B229F292F00C47603 /* productData.json in Resources */,
-				FAD08E2C22AC94E200597A4F /* appletv.jpg in Resources */,
-				FAD08E2722AC94E200597A4F /* watch.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

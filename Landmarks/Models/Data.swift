@@ -11,7 +11,7 @@ import CoreLocation
 
 let productData: [Product] = load("productData.json")
 func loadProducts(callback: @escaping ([Product]) -> Void) {
-    guard let url = URL(string: "https://api.myjson.com/bins/nezb5") else {
+    guard let url = URL(string: "https://api.myjson.com/bins/1exnnt") else {
         return
     }
     let task = URLSession.shared.dataTask(with: url) { data, response, error in
@@ -75,7 +75,8 @@ final class ImageStore {
         if let index = images.index(forKey: name) { return index }
         
         guard
-            let url = Bundle.main.url(forResource: name, withExtension: "jpg"),
+            
+            let url = URL(string: name),
             let imageSource = CGImageSourceCreateWithURL(url as NSURL, nil),
             let image = CGImageSourceCreateImageAtIndex(imageSource, 0, nil)
             else {
