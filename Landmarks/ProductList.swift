@@ -10,23 +10,46 @@ import SwiftUI
 struct ProductList: View {
     @EnvironmentObject var userData : UserData
     
+    var categories: [String: [Product]] {
+        .init(
+            grouping: userData.products,
+            by: { $0.category.rawValue }
+        )
+    }
+    
     var body: some View {
-        NavigationView {
-            List {
-                if !userData.products.isEmpty {
-                    ForEach(userData.products) { product in
-                        NavigationButton(
-                        destination: ProductDetail(product: product)) {
-                            ProductRow(product: product)
-                        }
+        VStack {
+            NavigationView {
+                List {
+                    HStack {
+                        CategoryRow(categoryName: "Featured", items: self.categories["Featured"]!)
+                            .listRowInsets(EdgeInsets())
                     }
-                    .onDelete(perform: delete)
-                } else {
-                    Text("Loading products")
+                    .padding(.leading, -12.0)
+                    if !userData.products.isEmpty {
+                        ForEach(userData.products) { product in
+                            NavigationButton(
+                                destination: ProductDetail(product: product)) {
+                                    ProductRow(product: product)
+                                }
+                            }
+                            .onDelete(perform: delete)
+                    } else {
+                        Text("Loading products")
+                    }
                 }
-            }
-            .navigationBarTitle(Text("My list"), displayMode: .large)
-            }
+                .navigationBarTitle(Text("My list"), displayMode: .large)
+                .navigationBarItems(trailing:
+                    PresentationButton(
+                        Image(systemName: "person.crop.circle")
+                            .imageScale(.large)
+                            .accessibility(label: Text("User Profile"))
+                            .padding(),
+                        destination: Text("User Profile")
+                        )
+                )
+        }
+    }
     }
     
     func delete(at offset: IndexSet) {

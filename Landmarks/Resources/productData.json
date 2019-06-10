@@ -23,7 +23,7 @@
     {
         "name": "iPhone XS",
         "description": "Best iPhone ever created",
-        "category": "Lakes",
+        "category": "Featured",
         "city": "Port Alsworth",
         "state": "Alaska",
         "id": 1002,
@@ -65,7 +65,7 @@
     {
         "name": "iPad Pro",
         "description": "Powerful tool for designers",
-        "category": "Lakes",
+        "category": "Featured",
         "city": "Browning",
         "state": "Montana",
         "id": 1004,
@@ -86,8 +86,8 @@
     {
         "name": "Macbook Pro",
         "description": "Powerful tool for designers",
-        "category": "Lakes",
-        "city": "Twin Lakes",
+        "category": "Featured",
+        "city": "Twin Featured",
         "state": "Alaska",
         "id": 1005,
         "isFeatured": false,
