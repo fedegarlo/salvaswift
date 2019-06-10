@@ -16,18 +16,15 @@ struct ProductDetail: View {
     }
     
     var body: some View {
-        
-                VStack(alignment: .center) {
-                    product.image(forSize: 200)
-                    VStack(alignment: .leading) {
-                
-                    HStack() {
-                        Text(verbatim: product.description)
-                            .font(.title)
-                        
-                        Button(action: {
-                            self.userData.products[self.productIndex]
-                                .isFavorite.toggle()
+        VStack(alignment: .center) {
+            product.image(forSize: 200)
+            VStack(alignment: .leading) {
+                HStack() {
+                    Text(verbatim: product.description)
+                        .font(.title)
+                    Button(action: {
+                        self.userData.products[self.productIndex]
+                            .isFavorite.toggle()
                         }) {
                             if self.userData.products[self.productIndex]
                                 .isFavorite {
@@ -39,7 +36,6 @@ struct ProductDetail: View {
                             }
                         }
                     }
-                    
                     HStack(alignment: .top) {
                         Text(verbatim: product.isPrime ? "Prime. From 10,95€" : "From 10,95€")
                             .color(.gray)
@@ -48,7 +44,7 @@ struct ProductDetail: View {
                             .fontWeight(.bold)
                             .color(.gray)
                     }
-                    }
+                }
                     .padding()
                 List {
                     Text("Related products")
