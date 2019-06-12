@@ -1,6 +1,6 @@
 //
 //  CategoryRow.swift
-//  Landmarks
+//  Salva
 //
 //  Created by Federico García-Lorca on 10/06/2019.
 //  Copyright © 2019 Apple. All rights reserved.
