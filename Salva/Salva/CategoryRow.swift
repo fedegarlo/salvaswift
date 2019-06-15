@@ -43,16 +43,16 @@ struct CategoryItem: View {
     var body: some View {
         VStack(alignment: .leading) {
             product
-                .image(forSize: 155)
+                .image(forSize: 160)
                 .renderingMode(.original)
                 .cornerRadius(5)
             Text(product.description)
                 .color(.primary)
                 .font(.caption)
-                .frame(width: 140.0)
+                .frame(width: 150.0)
             
             }
-            .padding(.leading, 17)
+            .padding(.horizontal, 20)
     }
 }
 
@@ -62,7 +62,7 @@ struct CategoryRow_Previews: PreviewProvider {
         CategoryRow(
             categoryName: "Featured",
             items: Array(productData.prefix(4))
-        ).previewLayout(.fixed(width: 660, height: 220))
+        )
     }
 }
 #endif
