@@ -1,7 +1,6 @@
 [
     {
-        "name": "Apple TV 4K",
-        "description": "Best for watching tv shows",
+        "description": "Apple TV 4K",
         "category": "Rivers",
         "city": "Twentynine Palms",
         "state": "California",
@@ -21,8 +20,7 @@
         }
     },
     {
-        "name": "iPhone XS",
-        "description": "Best iPhone ever created",
+        "description": "iPhone XS",
         "category": "Featured",
         "city": "Port Alsworth",
         "state": "Alaska",
@@ -42,8 +40,7 @@
         }
     },
     {
-        "name": "iPhone XS Max",
-        "description": "Best iPhone with larger display",
+        "description": "iPhone XS Max",
         "category": "Mountains",
         "city": "Skagway",
         "state": "Alaska",
@@ -63,8 +60,7 @@
         }
     },
     {
-        "name": "iPad Pro",
-        "description": "Powerful tool for designers",
+        "description": "iPad Pro",
         "category": "Featured",
         "city": "Browning",
         "state": "Montana",
@@ -84,8 +80,7 @@
         }
     },
     {
-        "name": "Macbook Pro",
-        "description": "Powerful tool for designers",
+        "description": "Macbook Pro",
         "category": "Featured",
         "city": "Twin Featured",
         "state": "Alaska",
@@ -105,8 +100,7 @@
         }
     },
     {
-        "name": "Apple Watch",
-        "description": "Health, sport and more",
+        "description": "Apple Watch",
         "category": "Mountains",
         "city": "West Glacier",
         "state": "Montana",

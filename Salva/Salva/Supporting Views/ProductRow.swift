@@ -14,10 +14,10 @@ struct ProductRow: View {
         HStack {
             product.image(forSize: 50)
             VStack(alignment: .leading) {
-                Text(verbatim: product.name)
+                Text(verbatim: product.description)
                     .font(.headline)
                 HStack {
-                    Text(verbatim: product.isPrime ? "Prime. From 10,95€" : "From 10,95€")
+                    Text(verbatim: product.isPrime ? "From 10,95€. Prime" : "From 10,95€")
                         .color(.gray)
 
                 }

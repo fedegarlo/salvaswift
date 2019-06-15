@@ -46,7 +46,7 @@ struct CategoryItem: View {
                 .image(forSize: 155)
                 .renderingMode(.original)
                 .cornerRadius(5)
-            Text(product.name)
+            Text(product.description)
                 .color(.primary)
                 .font(.caption)
             }
@@ -60,7 +60,7 @@ struct CategoryRow_Previews: PreviewProvider {
         CategoryRow(
             categoryName: productData[0].category.rawValue,
             items: Array(productData.prefix(3))
-        )
+        ).previewLayout(.fixed(width: 360, height: 220))
     }
 }
 #endif

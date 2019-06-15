@@ -20,11 +20,16 @@ struct ProductDetail: View {
             product.image(forSize: 200)
             VStack(alignment: .leading) {
                 HStack() {
-                    Text(verbatim: product.description)
+                    Text(verbatim: String(product.price.amount) + product.price.currency)
                         .font(.title)
-                    Button(action: {
-                        self.userData.products[self.productIndex]
-                            .isFavorite.toggle()
+                }
+                    HStack() {
+                        Text(verbatim: product.isPrime ? "From 10,95€. Prime" : "From 10,95€")
+                            .color(.gray)
+                        Spacer()
+                        Button(action: {
+                            self.userData.products[self.productIndex]
+                                .isFavorite.toggle()
                         }) {
                             if self.userData.products[self.productIndex]
                                 .isFavorite {
@@ -35,14 +40,6 @@ struct ProductDetail: View {
                                     .foregroundColor(Color.gray)
                             }
                         }
-                    }
-                    HStack(alignment: .top) {
-                        Text(verbatim: product.isPrime ? "Prime. From 10,95€" : "From 10,95€")
-                            .color(.gray)
-                        Spacer()
-                        Text(verbatim: String(product.price.amount) + product.price.currency)
-                            .fontWeight(.bold)
-                            .color(.gray)
                     }
                 }
                     .padding()
@@ -55,7 +52,7 @@ struct ProductDetail: View {
                         }
                     }
                 }
-                .navigationBarTitle(Text(product.name), displayMode: .large)
+                .navigationBarTitle(Text(product.description), displayMode: .large)
                 }
             }
 }

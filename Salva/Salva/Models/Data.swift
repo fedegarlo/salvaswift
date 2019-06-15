@@ -11,7 +11,7 @@ import CoreLocation
 
 let productData: [Product] = load("productData.json")
 func loadProducts(callback: @escaping ([Product]) -> Void) {
-    guard let url = URL(string: "https://api.myjson.com/bins/khlbt") else {
+    guard let url = URL(string: "https://api.myjson.com/bins/1402u1") else {
         return
     }
     let task = URLSession.shared.dataTask(with: url) { data, response, error in
