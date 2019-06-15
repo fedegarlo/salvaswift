@@ -6,6 +6,7 @@ A view showing the details for a product.
 */
 
 import SwiftUI
+import SafariServices
 
 struct ProductDetail: View {
     @EnvironmentObject var userData: UserData
@@ -22,6 +23,12 @@ struct ProductDetail: View {
                 HStack() {
                     Text(verbatim: String(product.price) + "€")
                         .font(.title)
+                    Spacer()
+                    Button(action: {
+                    UIApplication.shared.open(URL(string: self.product.url)!, options: [:], completionHandler: nil)
+                    }) {
+                        Text("Shop")
+                    }
                 }
                     HStack() {
                         Text(verbatim: product.isPrime ? "From 10,95€. Prime" : "From 10,95€")

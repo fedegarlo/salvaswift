@@ -5,7 +5,8 @@
         "isFeatured":false,
         "isFavorite":false,
         "isPrime":false,
-        "price":2999,
+        "price":29.99,
+        "url":"https://www.amazon.es/Fire-TV-Stick-Basic-Edition/dp/B01ETRGE7M?tag=crecienconoli-21",
         "imageName":"https://images-eu.ssl-images-amazon.com/images/I/415kiMyoKpL.jpg"
     },
     {
@@ -14,7 +15,8 @@
         "isFeatured":true,
         "isFavorite":true,
         "isPrime":true,
-        "price":49987,
+        "price":518.99,
+        "url":"http://www.amazon.es/gp/product/B07C2TWKZ2?tag=crecienconoli-21",
         "imageName":"https://images-eu.ssl-images-amazon.com/images/I/51OXEBG08AL.jpg"
     },
     {
@@ -23,7 +25,8 @@
         "isFeatured":false,
         "isFavorite":false,
         "isPrime":false,
-        "price":8999,
+        "price":89.99,
+        "url":"https://www.amazon.es/Engel-RS8100Y-Receptor-satélite-WiFi/dp/B07HGL8JD7?tag=crecienconoli-21",
         "imageName":"https://images-eu.ssl-images-amazon.com/images/I/41JxWhejmyL.jpg"
     },
     {
@@ -32,7 +35,8 @@
         "isFeatured":false,
         "isFavorite":false,
         "isPrime":false,
-        "price":70900,
+        "price":705,
+        "url":"https://www.amazon.es/Samsung-Galaxy-S10-Smartphone-Version/dp/B07NDDDJRN?tag=reposterianos-21",
         "imageName":"https://images-eu.ssl-images-amazon.com/images/I/31zMiVkPbeL.jpg"
     },
     {
@@ -41,16 +45,18 @@
         "isFeatured":false,
         "isFavorite":false,
         "isPrime":false,
-        "price":19900,
+        "price":199,
+        "url":"https://www.amazon.es/Apple-TV-4K-Reproductor-Smart/dp/B0767R22FL?tag=reposterianos-21",
         "imageName":"https://images-eu.ssl-images-amazon.com/images/I/31x4jNynO-L.jpg"
     },
     {
         "description":"Samsung 4K UHD 2019 50RU7405 - Smart TV de 50\" con Resolución 4K UHD, Ultra Dimming, HDR (HDR10+), Procesador 4K, One Remote Control, apps en Exclusiva y Compatible con Alexa",
         "id":"5cdeb22e973ccf001560045a",
-        "isFeatured":false,
-        "isFavorite":false,
-        "isPrime":false,
-        "price":62841,
+        "isFeatured":true,
+        "isFavorite":true,
+        "isPrime":true,
+        "price":628.41,
+        "url":"https://www.amazon.es/Samsung-UHD-2019-50RU7405-Resolución/dp/B07PQZN5XC?tag=reposterianos-21",
         "imageName":"https://images-eu.ssl-images-amazon.com/images/I/41egzEETe-L.jpg"
     },
     {
@@ -59,7 +65,8 @@
         "isFeatured":true,
         "isFavorite":true,
         "isPrime":true,
-        "price":876,
+        "price":8.76,
+        "url":"https://www.amazon.es/ESR-iPhone-XR-Inalámbrica-Transparente/dp/B07FLS9NJZ?tag=reposterianos-21",
         "imageName":"https://images-eu.ssl-images-amazon.com/images/I/51aqkQ88atL.jpg"
     }
 ]

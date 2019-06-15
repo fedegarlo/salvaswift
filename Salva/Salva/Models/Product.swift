@@ -11,6 +11,7 @@ import CoreLocation
 struct Product: Hashable, Codable, Identifiable {
     var id: String
     var description: String
+    var url: String
     fileprivate var imageName: String
     var price: Double
     var isFavorite: Bool

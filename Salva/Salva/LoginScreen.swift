@@ -30,9 +30,9 @@ struct LoginScreen : View {
                 }
                 }
                 .padding()
-                .navigationBarItems(trailing:
+                .navigationBarItems(leading:
                     Button(action: {}) {
-                        Text("Close")
+                        Text("OK")
                     }
             )
         }
