@@ -58,7 +58,7 @@ struct CategoryItem: View {
 struct CategoryRow_Previews: PreviewProvider {
     static var previews: some View {
         CategoryRow(
-            categoryName: productData[0].category.rawValue,
+            categoryName: "Featured",
             items: Array(productData.prefix(3))
         ).previewLayout(.fixed(width: 360, height: 220))
     }

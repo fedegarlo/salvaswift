@@ -1,18 +1,10 @@
 [
     {
         "description": "Apple TV 4K",
-        "category": "Rivers",
-        "city": "Twentynine Palms",
-        "state": "California",
         "id": 1001,
         "isFeatured": true,
         "isFavorite": true,
         "isPrime": true,
-        "park": "Joshua Tree National Park",
-        "coordinates": {
-            "longitude": -116.166868,
-            "latitude": 34.011286
-        },
         "imageName": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/image/AppleInc/aos/published/images/a/pp/apple/tv/apple-tv-hero-select-201709?wid=1076&amp;amp;hei=1070&amp;amp;fmt=jpeg&amp;amp;qlt=80&amp;amp;op_usm=0.5,0.5&amp;amp;.v=1504814112595",
         "price": {
             "amount": 199.95,
@@ -21,18 +13,10 @@
     },
     {
         "description": "iPhone XS",
-        "category": "Featured",
-        "city": "Port Alsworth",
-        "state": "Alaska",
         "id": 1002,
         "isFeatured": false,
         "isFavorite": false,
         "isPrime": false,
-        "park": "Lake Clark National Park and Preserve",
-        "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
-        },
         "imageName": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/image/AppleInc/aos/published/images/i/ph/iphone/xs/iphone-xs-select-2019-family?wid=882&amp;hei=1058&amp;fmt=jpeg&amp;qlt=80&amp;op_usm=0.5,0.5&amp;.v=1550795428390",
         "price": {
             "amount": 1059.95,
@@ -41,18 +25,10 @@
     },
     {
         "description": "iPhone XS Max",
-        "category": "Mountains",
-        "city": "Skagway",
-        "state": "Alaska",
         "id": 1003,
         "isFeatured": false,
         "isFavorite": true,
         "isPrime": true,
-        "park": "Klondike Gold Rush National Historical Park",
-        "coordinates": {
-            "longitude": -135.334571,
-            "latitude": 59.560551
-        },
         "imageName": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/image/AppleInc/aos/published/images/i/ph/iphone/xs/iphone-xs-max-select-2018-group?wid=882&hei=1058&fmt=jpeg&qlt=80&op_usm=0.5,0.5&.v=1550795427329",
         "price": {
             "amount": 1159.95,
@@ -61,18 +37,10 @@
     },
     {
         "description": "iPad Pro",
-        "category": "Featured",
-        "city": "Browning",
-        "state": "Montana",
         "id": 1004,
         "isFeatured": true,
         "isFavorite": true,
         "isPrime": true,
-        "park": "Glacier National Park",
-        "coordinates": {
-            "longitude": -113.536248,
-            "latitude": 48.69423
-        },
         "imageName": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/image/AppleInc/aos/published/images/i/pa/ipad/pro/ipad-pro-12-11-select-201810?wid=870&amp;hei=1100&amp;fmt=jpeg&amp;qlt=80&amp;op_usm=0.5,0.5&amp;.v=1540576039631",
         "price": {
             "amount": 699.95,
@@ -81,18 +49,10 @@
     },
     {
         "description": "Macbook Pro",
-        "category": "Featured",
-        "city": "Twin Featured",
-        "state": "Alaska",
         "id": 1005,
         "isFeatured": false,
         "isFavorite": false,
         "isPrime": false,
-        "park": "Lake Clark National Park and Preserve",
-        "coordinates": {
-            "longitude": -153.849883,
-            "latitude": 60.641684
-        },
         "imageName": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/image/AppleInc/aos/published/images/m/bp/mbp13touch/space/mbp13touch-space-select-201807?wid=1808&hei=1680&fmt=jpeg&qlt=80&.v=1529520060550",
         "price": {
             "amount": 5999.95,
@@ -101,18 +61,10 @@
     },
     {
         "description": "Apple Watch",
-        "category": "Mountains",
-        "city": "West Glacier",
-        "state": "Montana",
         "id": 1006,
         "isFeatured": false,
         "isFavorite": false,
         "isPrime": true,
-        "park": "Glacier National Park",
-        "coordinates": {
-            "longitude": -113.934831,
-            "latitude": 48.56002
-        },
         "imageName": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6215/6215900ld.jpg",
         "price": {
             "amount": 479.95,

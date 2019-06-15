@@ -10,10 +10,10 @@ import SwiftUI
 struct ProductList: View {
     @EnvironmentObject var userData : UserData
     
-    var categories: [String: [Product]] {
+    var featured: [Bool: [Product]] {
         .init(
             grouping: userData.products,
-            by: { $0.category.rawValue }
+            by: { $0.isFeatured }
         )
     }
     
@@ -22,7 +22,7 @@ struct ProductList: View {
             NavigationView {
                 List {
                     HStack {
-                        CategoryRow(categoryName: "Featured", items: self.categories["Featured"]!)
+                        CategoryRow(categoryName: "Featured", items: self.featured[true]!)
                             .listRowInsets(EdgeInsets())
                     }
                     .padding(.leading, -12.0)
