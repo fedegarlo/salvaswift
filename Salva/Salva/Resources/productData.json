@@ -1,74 +1,65 @@
 [
     {
-        "description": "Apple TV 4K",
-        "id": 1001,
-        "isFeatured": true,
-        "isFavorite": true,
-        "isPrime": true,
-        "imageName": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/image/AppleInc/aos/published/images/a/pp/apple/tv/apple-tv-hero-select-201709?wid=1076&amp;amp;hei=1070&amp;amp;fmt=jpeg&amp;amp;qlt=80&amp;amp;op_usm=0.5,0.5&amp;amp;.v=1504814112595",
-        "price": {
-            "amount": 199.95,
-            "currency": "€"
-        }
+        "description":"Fire TV Stick | Basic Edition",
+        "id":"5ca9d02744eb7500155d703b",
+        "isFeatured":false,
+        "isFavorite":false,
+        "isPrime":false,
+        "price":2999,
+        "imageName":"https://images-eu.ssl-images-amazon.com/images/I/415kiMyoKpL.jpg"
     },
     {
-        "description": "iPhone XS",
-        "id": 1002,
-        "isFeatured": false,
-        "isFavorite": false,
-        "isPrime": false,
-        "imageName": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/image/AppleInc/aos/published/images/i/ph/iphone/xs/iphone-xs-select-2019-family?wid=882&amp;hei=1058&amp;fmt=jpeg&amp;qlt=80&amp;op_usm=0.5,0.5&amp;.v=1550795428390",
-        "price": {
-            "amount": 1059.95,
-            "currency": "€"
-        }
+        "description":"Samsung 50NU7405 - Smart TV DE 50\" 4K UHD HDR (Pantalla Slim, Quad-Core, 3 HDMI, 2 USB), Color Negro (Carbon Black)",
+        "id":"5cdeb06f973ccf0015600458",
+        "isFeatured":true,
+        "isFavorite":true,
+        "isPrime":true,
+        "price":49987,
+        "imageName":"https://images-eu.ssl-images-amazon.com/images/I/51OXEBG08AL.jpg"
     },
     {
-        "description": "iPhone XS Max",
-        "id": 1003,
-        "isFeatured": false,
-        "isFavorite": true,
-        "isPrime": true,
-        "imageName": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/image/AppleInc/aos/published/images/i/ph/iphone/xs/iphone-xs-max-select-2018-group?wid=882&hei=1058&fmt=jpeg&qlt=80&op_usm=0.5,0.5&.v=1550795427329",
-        "price": {
-            "amount": 1159.95,
-            "currency": "€"
-        }
+        "description":"Engel RS8100Y - Receptor TV satélite HD PVR con WiFi",
+        "id":"5cd837e9a1718d0015d4a20e",
+        "isFeatured":false,
+        "isFavorite":false,
+        "isPrime":false,
+        "price":8999,
+        "imageName":"https://images-eu.ssl-images-amazon.com/images/I/41JxWhejmyL.jpg"
     },
     {
-        "description": "iPad Pro",
-        "id": 1004,
-        "isFeatured": true,
-        "isFavorite": true,
-        "isPrime": true,
-        "imageName": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/image/AppleInc/aos/published/images/i/pa/ipad/pro/ipad-pro-12-11-select-201810?wid=870&amp;hei=1100&amp;fmt=jpeg&amp;qlt=80&amp;op_usm=0.5,0.5&amp;.v=1540576039631",
-        "price": {
-            "amount": 699.95,
-            "currency": "€"
-        }
+        "description":"Samsung Galaxy S10 - Smartphone de 6.1”, Dual SIM, Negro (Prism Black), - [Version español]",
+        "id":"5c86c65f639265001540207f",
+        "isFeatured":false,
+        "isFavorite":false,
+        "isPrime":false,
+        "price":70900,
+        "imageName":"https://images-eu.ssl-images-amazon.com/images/I/31zMiVkPbeL.jpg"
     },
     {
-        "description": "Macbook Pro",
-        "id": 1005,
-        "isFeatured": false,
-        "isFavorite": false,
-        "isPrime": false,
-        "imageName": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/image/AppleInc/aos/published/images/m/bp/mbp13touch/space/mbp13touch-space-select-201807?wid=1808&hei=1680&fmt=jpeg&qlt=80&.v=1529520060550",
-        "price": {
-            "amount": 5999.95,
-            "currency": "€"
-        }
+        "description":"Apple TV 4K - Reproductor Smart TV (32 GB)",
+        "id":"5cd83864a1718d0015d4a212",
+        "isFeatured":false,
+        "isFavorite":false,
+        "isPrime":false,
+        "price":19900,
+        "imageName":"https://images-eu.ssl-images-amazon.com/images/I/31x4jNynO-L.jpg"
     },
     {
-        "description": "Apple Watch",
-        "id": 1006,
-        "isFeatured": false,
-        "isFavorite": false,
-        "isPrime": true,
-        "imageName": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6215/6215900ld.jpg",
-        "price": {
-            "amount": 479.95,
-            "currency": "€"
-        }
+        "description":"Samsung 4K UHD 2019 50RU7405 - Smart TV de 50\" con Resolución 4K UHD, Ultra Dimming, HDR (HDR10+), Procesador 4K, One Remote Control, apps en Exclusiva y Compatible con Alexa",
+        "id":"5cdeb22e973ccf001560045a",
+        "isFeatured":false,
+        "isFavorite":false,
+        "isPrime":false,
+        "price":62841,
+        "imageName":"https://images-eu.ssl-images-amazon.com/images/I/41egzEETe-L.jpg"
+    },
+    {
+        "description":"ESR Funda para iPhone XR, Funda Suave TPU Gel Ultra Fina Protección a Bordes y Cámara Compatible con Carga Inalámbrica Enjaca para Apple iPhone XR de 6.1\"-Transparente",
+        "id":"5d0165c1d4ef2500151fd488",
+        "isFeatured":true,
+        "isFavorite":true,
+        "isPrime":true,
+        "price":876,
+        "imageName":"https://images-eu.ssl-images-amazon.com/images/I/51aqkQ88atL.jpg"
     }
 ]

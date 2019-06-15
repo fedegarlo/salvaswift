@@ -20,7 +20,7 @@ struct ProductDetail: View {
             product.image(forSize: 200)
             VStack(alignment: .leading) {
                 HStack() {
-                    Text(verbatim: String(product.price.amount) + product.price.currency)
+                    Text(verbatim: String(product.price) + "€")
                         .font(.title)
                 }
                     HStack() {

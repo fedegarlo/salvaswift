@@ -49,6 +49,8 @@ struct CategoryItem: View {
             Text(product.description)
                 .color(.primary)
                 .font(.caption)
+                .frame(width: 140.0)
+            
             }
             .padding(.leading, 17)
     }
@@ -59,8 +61,8 @@ struct CategoryRow_Previews: PreviewProvider {
     static var previews: some View {
         CategoryRow(
             categoryName: "Featured",
-            items: Array(productData.prefix(3))
-        ).previewLayout(.fixed(width: 360, height: 220))
+            items: Array(productData.prefix(4))
+        ).previewLayout(.fixed(width: 660, height: 220))
     }
 }
 #endif

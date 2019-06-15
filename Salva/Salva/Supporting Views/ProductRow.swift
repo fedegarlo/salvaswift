@@ -29,7 +29,7 @@ struct ProductRow: View {
                 Image(systemName: "star.fill")
                     .foregroundColor(Color.blue)
             }
-            Text(verbatim: String(product.price.amount) + product.price.currency)
+            Text(verbatim: String(product.price) + "€")
                 .fontWeight(.bold)
                 .color(.blue)
                 

@@ -9,10 +9,10 @@ import SwiftUI
 import CoreLocation
 
 struct Product: Hashable, Codable, Identifiable {
-    var id: Int
+    var id: String
     var description: String
     fileprivate var imageName: String
-    var price: Price
+    var price: Double
     var isFavorite: Bool
     var isFeatured: Bool
     var isPrime: Bool
@@ -20,9 +20,4 @@ struct Product: Hashable, Codable, Identifiable {
     func image(forSize size: Int) -> Image {
         ImageStore.shared.image(name: imageName, size: size)
     }
-}
-
-struct Price: Hashable, Codable {
-    var amount: Double
-    var currency: String
 }
