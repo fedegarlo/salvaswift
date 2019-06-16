@@ -19,16 +19,23 @@ struct ProductDetail: View {
     var body: some View {
         VStack(alignment: .center) {
             product.image(forSize: 200)
-            VStack(alignment: .leading) {
+            VStack(alignment: .center) {
                 HStack() {
-                    Text(verbatim: String(product.price) + "€")
-                        .font(.title)
-                    Spacer()
                     Button(action: {
-                    UIApplication.shared.open(URL(string: self.product.url)!, options: [:], completionHandler: nil)
+                        if UIApplication.shared.canOpenURL(URL(string: self.product.url)!) {
+                            UIApplication.shared.open(URL(string: self.product.url)!, options: [:], completionHandler: { (success) in
+                                print("Open url : \(success)")
+                            })
+                        }
                     }) {
-                        Text("Shop")
+                        HStack() {
+                            Text("Shop " + String(format: "%.2f", product.price) + " €")
+                                .color(.white)
+                                .padding(12)
+                        }
                     }
+                        .background(Color.blue)
+                        .cornerRadius(12)
                 }
                     HStack() {
                         Text(verbatim: product.isPrime ? "From 10,95€. Prime" : "From 10,95€")
