@@ -17,7 +17,7 @@ struct ProductRow: View {
                 Text(verbatim: product.description)
                     .font(.headline)
                 HStack {
-                    Text(verbatim: product.isPrime ? "From 10,95€. Prime" : "From 10,95€")
+                    Text(verbatim: product.isPrime ? "From " + String(format: "%.2f", product.primePrice) + " €. Prime" : "From " + String(format: "%.2f", product.primePrice) + " €")
                         .color(.gray)
 
                 }
@@ -29,7 +29,7 @@ struct ProductRow: View {
                 Image(systemName: "star.fill")
                     .foregroundColor(Color.blue)
             }
-            Text(verbatim: String(product.price) + "€")
+            Text(verbatim: String(product.price) + " €")
                 .fontWeight(.bold)
                 .color(.blue)
                 

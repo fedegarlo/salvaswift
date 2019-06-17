@@ -14,6 +14,7 @@ struct Product: Hashable, Codable, Identifiable {
     var url: String
     fileprivate var imageName: String
     var price: Double
+    var primePrice: Double
     var isFavorite: Bool
     var isFeatured: Bool
     var isPrime: Bool

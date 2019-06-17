@@ -6,6 +6,7 @@
         "isFavorite":false,
         "isPrime":false,
         "price":29.99,
+        "primePrice":129.99,
         "url":"https://www.amazon.es/Fire-TV-Stick-Basic-Edition/dp/B01ETRGE7M?tag=crecienconoli-21",
         "imageName":"https://images-eu.ssl-images-amazon.com/images/I/415kiMyoKpL.jpg"
     },
@@ -16,6 +17,7 @@
         "isFavorite":true,
         "isPrime":true,
         "price":518.99,
+        "primePrice":129.99,
         "url":"http://www.amazon.es/gp/product/B07C2TWKZ2?tag=crecienconoli-21",
         "imageName":"https://images-eu.ssl-images-amazon.com/images/I/51OXEBG08AL.jpg"
     },
@@ -26,6 +28,7 @@
         "isFavorite":false,
         "isPrime":false,
         "price":89.99,
+        "primePrice":129.99,
         "url":"https://www.amazon.es/Engel-RS8100Y-Receptor-satélite-WiFi/dp/B07HGL8JD7?tag=crecienconoli-21",
         "imageName":"https://images-eu.ssl-images-amazon.com/images/I/41JxWhejmyL.jpg"
     },
@@ -36,6 +39,7 @@
         "isFavorite":false,
         "isPrime":false,
         "price":705,
+        "primePrice":129.99,
         "url":"https://www.amazon.es/Samsung-Galaxy-S10-Smartphone-Version/dp/B07NDDDJRN?tag=reposterianos-21",
         "imageName":"https://images-eu.ssl-images-amazon.com/images/I/31zMiVkPbeL.jpg"
     },
@@ -46,6 +50,7 @@
         "isFavorite":false,
         "isPrime":false,
         "price":199,
+        "primePrice":129.99,
         "url":"https://www.amazon.es/Apple-TV-4K-Reproductor-Smart/dp/B0767R22FL?tag=reposterianos-21",
         "imageName":"https://images-eu.ssl-images-amazon.com/images/I/31x4jNynO-L.jpg"
     },
@@ -56,6 +61,7 @@
         "isFavorite":true,
         "isPrime":true,
         "price":628.41,
+        "primePrice":129.99,
         "url":"https://www.amazon.es/Samsung-UHD-2019-50RU7405-Resolución/dp/B07PQZN5XC?tag=reposterianos-21",
         "imageName":"https://images-eu.ssl-images-amazon.com/images/I/41egzEETe-L.jpg"
     },
@@ -66,6 +72,7 @@
         "isFavorite":true,
         "isPrime":true,
         "price":8.76,
+        "primePrice":129.99,
         "url":"https://www.amazon.es/ESR-iPhone-XR-Inalámbrica-Transparente/dp/B07FLS9NJZ?tag=reposterianos-21",
         "imageName":"https://images-eu.ssl-images-amazon.com/images/I/51aqkQ88atL.jpg"
     }

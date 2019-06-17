@@ -42,7 +42,7 @@ struct ProductDetail: View {
                 HStack() {
                     Text(verbatim: product.description)
                     .color(.gray)
-                    Text(verbatim: product.isPrime ? "From 10,95€. Prime" : "From 10,95€")
+                    Text(verbatim: product.isPrime ? "From " + String(format: "%.2f", product.primePrice) + " €. Prime" : "From " + String(format: "%.2f", product.primePrice) + " €")
                         .color(.gray)
                     Spacer()
                     Button(action: {
