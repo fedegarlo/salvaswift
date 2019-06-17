@@ -14,15 +14,17 @@ struct LoginScreen : View {
             VStack() {
                 HStack() {
                     Image(systemName: "person.crop.circle")
-                    .frame(width: 20)
-                    TextField(.constant(""))
+                        .frame(width: 20)
+                    TextField(.constant(""),
+                              placeholder: Text("Email"))
                     .textFieldStyle(.roundedBorder)
                     
                 }
                 HStack() {
                     Image(systemName: "lock.fill")
                     .frame(width: 20)
-                    TextField(.constant(""))
+                    TextField(.constant(""),
+                              placeholder: Text("Password"))
                     .textFieldStyle(.roundedBorder)
                 }
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
