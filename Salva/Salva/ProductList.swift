@@ -61,7 +61,7 @@ struct ProductList: View {
 
 struct ProductList_Previews: PreviewProvider {
     static var previews: some View {
-        ForEach(["iPhone 8"].identified(by: \.self)) { deviceName in
+        ForEach(["iPhone X"].identified(by: \.self)) { deviceName in
             ProductList()
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)

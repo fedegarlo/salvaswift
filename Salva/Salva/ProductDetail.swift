@@ -30,45 +30,49 @@ struct ProductDetail: View {
                     }) {
                         HStack() {
                             Text("Shop " + String(format: "%.2f", product.price) + " €")
+                                .fontWeight(.bold)
                                 .color(.white)
                                 .padding(12)
                         }
-                    }
+                        }
                         .background(Color.blue)
                         .cornerRadius(12)
                 }
-                    HStack() {
-                        Text(verbatim: product.isPrime ? "From 10,95€. Prime" : "From 10,95€")
-                            .color(.gray)
-                        Spacer()
-                        Button(action: {
-                            self.userData.products[self.productIndex]
-                                .isFavorite.toggle()
-                        }) {
-                            if self.userData.products[self.productIndex]
-                                .isFavorite {
-                                Image(systemName: "star.fill")
-                                    .foregroundColor(Color.blue)
-                            } else {
-                                Image(systemName: "star")
-                                    .foregroundColor(Color.gray)
-                            }
+                .padding()
+                HStack() {
+                    Text(verbatim: product.description)
+                    .color(.gray)
+                    Text(verbatim: product.isPrime ? "From 10,95€. Prime" : "From 10,95€")
+                        .color(.gray)
+                    Spacer()
+                    Button(action: {
+                        self.userData.products[self.productIndex]
+                            .isFavorite.toggle()
+                    }) {
+                        if self.userData.products[self.productIndex]
+                            .isFavorite {
+                            Image(systemName: "star.fill")
+                                .foregroundColor(Color.blue)
+                        } else {
+                            Image(systemName: "star")
+                                .foregroundColor(Color.gray)
                         }
                     }
                 }
-                    .padding()
-                List {
-                    Text("Related products")
-                    ForEach(userData.products) { product in
-                        NavigationButton(
-                        destination: ProductDetail(product: product)) {
-                            ProductRow(product: product)
-                        }
+                }
+                .padding(.horizontal)
+            List {
+                Text("Related products")
+                ForEach(userData.products) { product in
+                    NavigationButton(
+                    destination: ProductDetail(product: product)) {
+                        ProductRow(product: product)
                     }
                 }
-                .navigationBarTitle(Text(product.description), displayMode: .large)
                 }
-            }
+        }
+        //.navigationBarTitle(Text(product.description), displayMode: .large)
+    }
 }
 
 #if DEBUG
