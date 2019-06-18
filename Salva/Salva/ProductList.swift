@@ -41,11 +41,13 @@ struct ProductList: View {
                 .navigationBarTitle(Text("My list"), displayMode: .large)
                 .navigationBarItems(trailing:
                     PresentationButton(
-                        Image(systemName: "person.crop.circle")
+                        destination: LoginScreen(),
+                        label: {
+                            Image(systemName: "person.crop.circle")
                             .imageScale(.large)
                             .accessibility(label: Text("User Profile"))
-                            .padding(),
-                        destination: LoginScreen()
+                            .padding()
+                            }
                         )
                 )
         }
